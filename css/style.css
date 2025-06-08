@@ -1,0 +1,577 @@
+/*
+	Theme: Scrap Metal KE;
+	Author: Michael Chan;
+	Date of Creation: Fri, June 6, 2025;
+	Colors: Flat UI, Indian Palette, White, Ending Navy Blue & Black;
+*/
+
+	
+/* all pages */
+	*
+	{
+		font-family: Verdana, sans-serif;
+		font-size: 13px;
+	}
+
+	html, body
+	{
+		scroll-behavior: smooth;
+		box-sizing: border-box;
+	}
+/* all pages end */
+
+/* banner */
+	.banner
+	{
+		min-height: 100vh;
+		background-image: url("../images/scrap-metal.jpg");
+		object-fit: cover;
+		background-size: cover;
+	}
+
+	.banner-overlay
+	{
+		background-color: rgba(0, 0, 0, 0.6);
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+
+	.banner-content h1
+	{
+		font-size: 6rem;
+		font-weight: 800;
+	}
+
+	.banner-content p
+	{
+		font-size: 1rem;
+		font-weight: 800;
+	}
+/* banner ends */
+
+/* header cover */
+	.header-cover
+	{
+		background-color: rgba(0, 0, 0, 0.8);
+		color: white;
+		width: 100%;
+		z-index: 2;
+		position: fixed;
+	}
+/* header cover ends */
+
+/* header */
+	header
+	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header .logo a
+	{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		text-decoration: none;
+		color: white;
+	}
+
+	header .logo a img
+	{
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		width: 100px;
+		height: 80px;
+		border-radius: 13px;
+		margin-right: 10px;
+		object-fit: cover;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	header .logo a p
+	{
+		font-size: 1rem;
+		font-weight: 800;
+		margin-top: 40px;
+	}
+
+	header ul
+	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header ul li
+	{
+		list-style: none;
+		margin-right: 50px;
+	}
+
+	header ul li a
+	{
+		padding: 5px 10px;
+		border-radius: 3px;
+		text-decoration: none;
+		color: white;
+	}
+
+	header ul li a:hover
+	{
+		background-color: white;
+		color: #182C61;
+	}
+
+	.checkbtn
+	{
+		font-size: 25px;
+		color: white;
+		cursor: pointer;
+		display: none;
+	}
+
+	#check
+	{
+		display: none;
+	}
+/* header ends */
+
+/* about */
+	.section-title
+	{
+		font-size: 2rem;
+		font-weight: 800;
+	}
+
+	.about
+	{
+		text-align: center;
+	}
+/* about ends */
+
+/* service */
+	.service
+	{
+		background-color: #CAD3C8;
+		padding: 20px;
+		margin-top: 30px;
+	}
+
+	.service-container
+	{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 30px;
+		margin-bottom: 20px;
+	}
+
+	.service-box
+	{
+		background-color: white;
+		padding: 20px 20px;
+		border-radius: 13px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.service-box-header
+	{
+		font-size: 1rem;
+		font-weight: 800;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+/* service ends */
+
+/* products */
+	.products
+	{
+		margin-top: 30px;
+	}
+
+	.products-container
+	{
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-gap: 30px;
+		margin-bottom: 20px;
+	}
+
+	.product-box
+	{
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.product-box img
+	{
+		width: 100%;
+		height: 300px;
+		object-fit: cover;
+	}
+
+	.product-box-info
+	{
+		padding: 11px 11px;
+		text-align: center;
+	}
+
+	.product-box-info p
+	{
+		font-size: 1rem;
+	}
+/* products end */
+
+/* footer */
+	.footer-cover
+	{
+		background-color: #CAD3C8;
+		padding: 30px;
+	}
+
+	.footer-container
+	{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 30px;
+	}
+
+	.footer-img
+	{
+		border-radius: 13px;
+		object-fit: cover;
+		width: 60%;
+		margin-right: 20px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+
+	.footer-title
+	{
+		font-size: 2rem;
+		font-weight: 400;
+		margin-bottom: 20px;
+	}
+
+	.footer-box
+	{
+		width: 100%;
+	}
+
+	.footer-box p
+	{
+		display: flex;
+		align-items: center;
+		margin: 5px 0;
+	}
+
+	.footer-box .work
+	{
+		width: 10%;
+		height: 40px;
+		margin-right: 5px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		border-radius: 13px;
+		padding: 5px;
+	}
+
+	.go-up
+	{
+		position: fixed;
+		width: 3%;
+		right: 0;
+		top: 90%;
+		margin-right: 30px;
+		height: 45px;
+	}
+/* footer ends */
+
+/* team */
+	.team
+	{
+		background-color: #f9f9f9;
+		margin-top: 50px;
+		padding: 30px;
+	}
+
+	.team-container
+	{
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-gap: 20px;
+	}
+
+	.team-box
+	{
+		width: 100%;
+		text-align: center;
+	}
+
+	.team-box img
+	{
+		width: 200px;
+		height: 200px;
+		object-fit: cover;
+		border-radius: 50%;
+		border: 4px solid #ddd;
+		margin-bottom: 10px;
+	}
+
+	.team-box-title
+	{
+		font-weight: bold;
+		font-size: 16px;
+	}
+
+	.team-box-title span
+	{
+		display: block;
+		font-weight: normal;
+		font-size: 14px;
+		color: #555;
+	}
+/* team ends */
+
+/* get in touch */
+	.form-container
+	{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 30px;
+		align-items: center;
+	}
+
+	.form-box
+	{
+		padding: 20px 20px;
+		width: 100%;
+	}
+
+	.form-responsive
+	{
+		padding: 10px 15px;
+		border: 2px solid #ddd;
+		border-radius: 5px;
+		width: 70%;
+		margin-top: 5px;
+	}
+
+	.form-box .ta
+	{
+		border: 2px solid #ddd;
+		border-radius: 5px;
+		margin-top: 5px;
+		width: 70%;
+		padding: 10px 15px;
+	}
+
+	.msg-btn
+	{
+		border: none;
+		border-radius: 3px;
+		padding: 8px 14px;
+		background-color: #CAD3C8;
+	}
+/* get in touch ends */
+
+/* page responsiveness */
+	@media screen and (max-width: 768px)
+	{
+		/* header */
+			.checkbtn
+			{
+				display: block;
+				order: 1;
+				margin-right: 10px;
+			}
+
+			ul
+			{
+				position: fixed;
+				top: 120px;
+				right: -100%;
+				background-color: #CAD3C8;
+				width: 30%;
+				height: 30vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				transition: all 0.3s;
+			}
+
+			ul li
+			{
+				margin: 20px 0;
+			}
+
+			ul li a
+			{
+				font-size: 13px;
+			}
+
+			#check:checked ~ ul
+			{
+				right: 0;
+			}
+		/* header ends */
+
+		/* products */
+			.products-container
+			{
+				grid-template-columns: repeat(4, 1fr);
+			}
+
+			.product-box img
+			{
+				height: 200px;
+			}
+		/* products end */
+
+		/* team */
+			.team-container
+			{
+				grid-template-columns: repeat(3, 1fr);
+			}
+
+			.team-box img
+			{
+				width: 150px;
+				height: 150px;
+			}
+		/* team ends */
+
+		/* footer */
+			.footer-container
+			{
+				grid-template-columns: repeat(2, 1fr);
+			}
+
+			.footer-img
+			{
+				width: 80%;
+			}
+
+			.footer-box .work
+			{
+				width: 12%;
+			}
+
+			.go-up
+			{
+				width: 6%;
+			}
+		/* footer ends */
+
+		/* get in touch */
+			.form-responsive
+			{
+				width: 100%;
+			}
+
+			.form-box .ta
+			{
+				width: 100%;
+			}
+		/* get in touch */
+	}
+
+	@media screen and (max-width: 425px)
+	{
+		/* services */
+			.service-container
+			{
+				grid-template-columns: repeat(1, 1fr);
+			}
+		/* services end */
+
+		/* products */
+			.products-container
+			{
+				grid-template-columns: repeat(2, 1fr);
+			}
+		/* products end */
+
+		/* team */
+			.team-container
+			{
+				grid-template-columns: repeat(2, 1fr);
+			}
+
+			.team-box img
+			{
+				width: 120px;
+				height: 120px;
+			}
+		/* team ends */
+
+		/* footer */
+			.footer-container
+			{
+				grid-template-columns: repeat(1, 1fr);
+			}
+
+			.footer-img
+			{
+				width: 80%;
+			}
+
+			.footer-box .work
+			{
+				width: 12%;
+			}
+
+			.go-up
+			{
+				width: 10%;
+			}
+		/* footer ends */
+
+		/* get in touch */
+			.form-container
+			{
+				grid-template-columns: repeat(1, 1fr);
+			}
+
+			.msg
+			{
+				text-align: center;
+			}
+		/* get in touch ends */
+	}
+
+	@media screen and (max-width: 320px)
+	{
+		/* header */
+			header .logo a img
+			{
+				height: 70px;
+				margin-right: 0px;
+			}
+
+			header .logo a p
+			{
+				font-size: 1rem;
+				font-weight: 600;
+				margin-top: 30px;
+			}
+
+			.banner-content h1
+			{
+				font-size: 2rem;
+				font-weight: 800;
+			}
+		/* header ends */
+
+		/* footer */
+			.go-up
+			{
+				width: 13%;
+			}
+
+			.footer-box .work
+			{
+				width: 16%;
+			}
+		/* footer ends */
+	}
+/* page responsiveness ends */
