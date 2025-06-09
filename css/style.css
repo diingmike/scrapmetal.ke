@@ -279,7 +279,7 @@
 		position: fixed;
 		width: 3%;
 		right: 0;
-		top: 90%;
+		top: 80%;
 		margin-right: 30px;
 		height: 45px;
 	}
@@ -554,12 +554,12 @@
 
 			.footer-box .work
 			{
-				width: 12%;
+				width: 14%; /* 12 */
 			}
 
 			.go-up
 			{
-				width: 10%;
+				width: 12%; /* 10 */
 			}
 		/* footer ends */
 
