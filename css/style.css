@@ -488,6 +488,14 @@
 
 	@media screen and (max-width: 425px)
 	{
+		/* header */
+			header .logo a img
+			{
+				width: 50px;
+				height: 50px;
+			}
+		/* header ends */
+		
 		/* banner */
 			.banner-h1
 			{
