@@ -389,6 +389,7 @@
 		/* header */
 			.checkbtn
 			{
+				font-size: 30px;
 				display: block;
 				order: 1;
 				margin-right: 10px;
@@ -400,8 +401,8 @@
 				top: 120px;
 				right: -100%;
 				background-color: #CAD3C8;
-				width: 30%;
-				height: 30vh;
+				width: 40%;
+				height: 40vh;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
