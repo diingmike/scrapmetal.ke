@@ -487,6 +487,14 @@
 
 	@media screen and (max-width: 425px)
 	{
+		/* banner */
+			.banner-h1
+			{
+				font-size: 3rem;
+				font-weight: 800;		
+			}
+		/* banner ends */
+		
 		/* services */
 			.service-container
 			{
