@@ -507,6 +507,11 @@
 				font-size: 3rem;
 				font-weight: 800;		
 			}
+
+			.banner-overlay
+			{
+				height: 120%;
+			}
 		/* banner ends */
 		
 		/* services */
