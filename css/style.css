@@ -74,7 +74,10 @@
 		display: flex;
 		align-items: center;
 		text-decoration: none;
-		color: white;
+		color: #CAD3C8;
+		font-size: 1rem;
+		font-weight: 500;
+		padding: 30px;
 	}
 
 	/*header .logo a img
