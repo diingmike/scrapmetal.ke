@@ -415,6 +415,11 @@
 		background-color: #CAD3C8;
 	}
 
+	.msg-btn:hover
+	{
+		background-color: #B0BABA;
+	}
+
 	.msg-btn-top
 	{
 		border: none;
@@ -423,6 +428,11 @@
 		background-color: #CAD3C8;
 		text-decoration: none;
 		color: black;
+	}
+
+	.msg-btn-top:hover
+	{
+		background-color: #B0BABA;
 	}
 /* get in touch ends */
 
