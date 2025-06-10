@@ -1,5 +1,5 @@
 /*
-	Theme: Scrap Metal KE;
+	Theme: Scrap Metal Kenya LLC;
 	Author: Michael Chan;
 	Date of Creation: Fri, June 6, 2025;
 	Colors: Flat UI, Indian Palette, White, Ending Navy Blue & Black;
@@ -71,8 +71,8 @@
 
 	header .logo a
 	{
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		display: flex;
+		align-items: center;
 		text-decoration: none;
 		color: white;
 	}
@@ -92,8 +92,8 @@
 	header .logo a p
 	{
 		font-size: 1rem;
-		font-weight: 800;
-		margin-top: 40px;
+		font-weight: 500;
+		color: #CAD3C8;	
 	}
 
 	header ul
