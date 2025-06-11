@@ -449,10 +449,14 @@
 		/* header */
 			.checkbtn
 			{
-				font-size: 30px;
 				display: block;
 				order: 1;
 				margin-right: 10px;
+			}
+
+			.checkbtn i
+			{
+				font-size: 30px;
 			}
 
 			ul
