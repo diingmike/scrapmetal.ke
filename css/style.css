@@ -755,9 +755,14 @@
 		/* products */
 			.products-container
 			{
-				grid-template-columns: repeat(2, 1fr);
+				grid-template-columns: repeat(1, 1fr);
 			}
 
+			.products
+			{
+				padding: 10px;
+			}
+		
 			#products
 			{
 				scroll-margin-top: 70px;
@@ -778,6 +783,11 @@
 		/* team ends */
 
 		/* footer */
+			.footer-cover
+			{
+				padding: 20px;
+			}
+			
 			.footer-container
 			{
 				grid-template-columns: repeat(1, 1fr);
@@ -808,6 +818,20 @@
 			.msg
 			{
 				text-align: center;
+			}
+		/* get in touch ends */
+
+		/* service */
+			.service
+			{
+				padding: 20px;
+			}
+		/* service ends */
+
+		/* get in touch */
+			.get-in-touch
+			{
+				padding: 20px;
 			}
 		/* get in touch ends */
 	}
@@ -910,6 +934,11 @@
 		/* team ends */
 
 		/* footer */
+			.footer-cover
+			{
+				padding: 20px;
+			}
+		
 			.go-up
 			{
 				width: 13%;
