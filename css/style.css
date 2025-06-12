@@ -1,8 +1,9 @@
 /*
-	Theme: Scrap Metal Kenya LLC;
+	Theme: Scrap Metal KE;
 	Author: Michael Chan;
 	Date of Creation: Fri, June 6, 2025;
 	Colors: Flat UI, Indian Palette, White, Ending Navy Blue & Black;
+	Colors: Flat UI, Swedish Palette, White, Black & Chrome Yellow;
 */
 
 	
@@ -23,92 +24,91 @@
 /* banner */
 	.banner
 	{
-		min-height: 100vh;
-		background-image: url("../images/scrap-metal.jpg");
-		object-fit: cover;
+		background-image: url('../images/scrap-metal.jpg');
 		background-size: cover;
+		background-position: center;
+		position: relative;
+		min-height: 100vh;
 	}
 
-	.banner-overlay
+	.banner::before
 	{
-		background-color: rgba(0, 0, 0, 0.6);
+		content: "";
 		position: absolute;
+		top: 0;
+		left: 0;
 		width: 100%;
 		height: 100%;
+		background-color: rgba(0, 0, 0, 0.4);
+		z-index: 1;
+	}
+
+	.banner-content
+	{
+		color: white;
+		text-align: center;
+		position: relative;
+		z-index: 2;
+		padding: 250px;
 	}
 
 	.banner-content h1
 	{
 		font-size: 6rem;
+		text-transform: uppercase;
 		font-weight: 800;
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 	}
 
-	.banner-content p
+	.banner-content h2
 	{
-		font-size: 1rem;
+		font-size: 2rem;
 		font-weight: 800;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+		margin-bottom: 30px;
+	}
+
+	.banner-btn
+	{
+		text-decoration: none;
+		color: black;
+		border: none;
+		border-radius: 5px;
+		padding: 8px 16px;
+		background-color: #BDC581;
 	}
 /* banner ends */
 
-/* header cover */
+/* header */
 	.header-cover
 	{
-		background-color: rgba(0, 0, 0, 0.8);
-		color: white;
-		width: 100%;
-		z-index: 2;
 		position: fixed;
+		width: 100%;
+		z-index: 3;
+		background-color: rgba(0, 0, 0, 0.6);
+		color: #BDC581;
 	}
-/* header cover ends */
 
-/* header */
 	header
 	{
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
+		justify-content: space-between;
 	}
 
-	/*header .logo a
+	header .logo
 	{
-		display: flex;
-		align-items: center;
-		text-decoration: none;
-		color: #CAD3C8;
-		font-size: 1rem;
-		font-weight: 500;
-		padding: 30px;
-	}*/
-
-	header .logo img
-	{
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		height: 100px;
 	}
 
-	/*header .logo a img
+	header .logo img
 	{
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		width: 70px;
-		height: 70px;
-		border-radius: 13px;
-		margin-right: 10px;
-		object-fit: cover;
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}*/
-
-	/*header .logo a p
-	{
-		font-size: 1rem;
-		font-weight: 500;
-		color: #CAD3C8;	
-	}*/
+		height: 100%;
+	}
 
 	header ul
 	{
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
 	}
 
@@ -121,14 +121,14 @@
 	header ul li a
 	{
 		padding: 5px 10px;
-		border-radius: 3px;
+		border-radius: 5px;
 		text-decoration: none;
-		color: white;
+		color: #BDC581;
 	}
 
 	header ul li a:hover
 	{
-		background-color: #CAD3C8;
+		background-color: #BDC581;
 		color: black;
 	}
 
@@ -141,7 +141,7 @@
 	.header-form-responsive
 	{
 		padding: 5px 10px;
-		border: 2px solid #CAD3C8;
+		border: 2px solid #BDC581;
 		border-radius: 5px;
 		color: black;
 		margin-right: 20px;
@@ -153,21 +153,20 @@
 		border: none;
 		border-radius: 5px;
 		color: black;
-		background-color: #CAD3C8;
+		background-color: #BDC581;
 		transition: background-color 0.3s ease;
-	}
-
-	.search-btn:hover
-	{
-		background-color: #B0BABA;
 	}
 
 	.checkbtn
 	{
-		font-size: 25px;
-		color: white;
+		color: #BDC581;
 		cursor: pointer;
 		display: none;
+	}
+
+	.checkbtn i
+	{
+		font-size: 30px;
 	}
 
 	#check
@@ -181,25 +180,27 @@
 	{
 		font-size: 2rem;
 		font-weight: 800;
+		margin-bottom: 20px;
 	}
 
 	.about
 	{
+		padding: 50px;
 		text-align: center;
 	}
 
 	#about
 	{
-		scroll-margin-top: 118px;
+		scroll-margin-top: 100px;
 	}
 /* about ends */
 
 /* service */
 	.service
 	{
-		background-color: #CAD3C8;
-		padding: 20px;
-		margin-top: 30px;
+		background-color: #BDC581;
+		padding: 50px;
+		text-align: center;
 	}
 
 	.service-container
@@ -228,14 +229,15 @@
 
 	#service
 	{
-		scroll-margin-top: 90px;
+		scroll-margin-top: 100px;
 	}
 /* service ends */
 
 /* products */
 	.products
 	{
-		margin-top: 30px;
+		padding: 50px;
+		text-align: center;
 	}
 
 	.products-container
@@ -273,9 +275,9 @@
 /* footer */
 	.footer-cover
 	{
-		background-color: #CAD3C8;
+		background-color: #BDC581;
 		color: black;
-		padding: 30px;
+		padding: 50px;
 	}
 
 	.footer-container
@@ -333,14 +335,19 @@
 		margin-right: 30px;
 		height: 45px;
 	}
+
+	.footer-cover hr
+	{
+		margin-top: 30px;
+	}
 /* footer ends */
 
 /* team */
 	.team
 	{
-		background-color: #f9f9f9;
-		margin-top: 50px;
-		padding: 30px;
+		background-color: #BDC581; /* #f9f9f9 */
+		padding: 50px;
+		text-align: center;
 	}
 
 	.team-container
@@ -382,6 +389,12 @@
 /* team ends */
 
 /* get in touch */
+	.get-in-touch
+	{
+		padding: 50px;
+		text-align: center;
+	}
+
 	.form-container
 	{
 		display: grid;
@@ -399,7 +412,7 @@
 	.form-responsive
 	{
 		padding: 10px 15px;
-		border: 2px solid #ddd;
+		border: 2px solid #BDC581; /* #ddd */
 		border-radius: 5px;
 		width: 70%;
 		margin-top: 5px;
@@ -407,7 +420,7 @@
 
 	.form-box .ta
 	{
-		border: 2px solid #ddd;
+		border: 2px solid #BDC581; /* #ddd */
 		border-radius: 5px;
 		margin-top: 5px;
 		width: 70%;
@@ -419,27 +432,7 @@
 		border: none;
 		border-radius: 3px;
 		padding: 8px 14px;
-		background-color: #CAD3C8;
-	}
-
-	.msg-btn:hover
-	{
-		background-color: #B0BABA;
-	}
-
-	.msg-btn-top
-	{
-		border: none;
-		border-radius: 3px;
-		padding: 8px 14px;
-		background-color: #CAD3C8;
-		text-decoration: none;
-		color: black;
-	}
-
-	.msg-btn-top:hover
-	{
-		background-color: #B0BABA;
+		background-color: #BDC581;
 	}
 /* get in touch ends */
 
@@ -459,14 +452,14 @@
 				font-size: 30px;
 			}
 
-			ul
+			header ul
 			{
 				position: fixed;
 				top: 120px;
 				right: -100%;
-				background-color: #CAD3C8;
-				width: 40%;
-				height: 40vh;
+				background-color: #BDC581;
+				width: 20%;
+				height: 30vh;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
@@ -474,14 +467,20 @@
 				transition: all 0.3s;
 			}
 
-			ul li
+			header ul li
 			{
 				margin: 20px 0;
 			}
 
-			ul li a
+			header ul li a
 			{
 				font-size: 13px;
+				color: black;
+			}
+
+			header ul li a:hover
+			{
+				color: black;
 			}
 
 			#check:checked ~ ul
@@ -523,7 +522,7 @@
 
 			.footer-img
 			{
-				width: 80%;
+				width: 100%;
 			}
 
 			.footer-box .work
@@ -553,20 +552,14 @@
 	@media screen and (max-width: 425px)
 	{
 		/* header */
-			/*header .logo a img
+			.checkbtn i
 			{
-				width: 50px;
-				height: 50px;
-			}*/
+				font-size: 25px;
+			}
 
-			/*header .logo a p
+			header .logo
 			{
-				margin-top: 20px;
-			}*/
-
-			header .logo a
-			{
-				padding: 10px;
+				height: 70px;
 			}
 
 			.header-form-responsive
@@ -581,20 +574,15 @@
 				padding: 3px 6px;
 			}
 		/* header ends */
-		
+
 		/* banner */
-			.banner-h1
+			.banner-content h1
 			{
 				font-size: 3rem;
-				font-weight: 800;		
-			}
-
-			.banner-overlay
-			{
-				height: 100%;
+				font-weight: 800;
 			}
 		/* banner ends */
-		
+
 		/* services */
 			.service-container
 			{
@@ -635,12 +623,12 @@
 
 			.footer-box .work
 			{
-				width: 14%; /* 12 */
+				width: 12%;
 			}
 
 			.go-up
 			{
-				width: 12%; /* 10 */
+				width: 10%;
 			}
 		/* footer ends */
 
@@ -660,17 +648,9 @@
 	@media screen and (max-width: 320px)
 	{
 		/* header */
-			header .logo a img
+			header .logo
 			{
-				height: 70px;
-				margin-right: 0px;
-			}
-
-			header .logo a p
-			{
-				font-size: 1rem;
-				font-weight: 600;
-				margin-top: 30px;
+				height: 50px;
 			}
 
 			.banner-content h1
