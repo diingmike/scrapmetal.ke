@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang = "en" dir = "ltr">
+	<head>
+		<title> Scrap Metal Kenya LLC </title>
+
+		<meta charset = "UTF-8" />
+		<meta name = "author" content = "Michael Chan" /> <!--date of creation; Fri, June 6, 2025-->
+		<meta http-equiv = "X-UA-Compatible" content = "IE=edge" />
+		<meta name = "viewport" content = "width=device-width,initial-scale=1,shrink-to-fit=no" />
+
+		<!--custom css-->
+		<link rel = "stylesheet" href = "css/style.css" />
+
+		<!--nav responsiveness css-->
+		<link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+		<!--tailwind for session messages-->
+		<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+		<!--bootstrap css-->
+		<link href ="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+	</head>
+
+	<body style = "background-color: white; color: black;">
+		<!--header-->
+			<div class = "header-cover">
+				<div class = "container">
+					<header>
+						<input type="checkbox" id="check" />
+						<label for="check" class="checkbtn">
+							<i class="fas fa-bars"></i>
+						</label>
+
+						<div class = "logo">
+							<a href = ""> <img src = "images/logo.png" /> </a>									
+						</div>
+
+						<form action = "" method = "POST">
+							<div class = "header-search">
+								<input type = "text" name = "search" placeholder = "search for item by name" 
+								class = "header-form-responsive" required />
+								<button type = "submit" class = "search-btn"> Search </button>
+							</div>
+						</form>
+
+						<ul>
+							<li> <a href = ""> Home </a> </li>
+							<li> <a href = "#about"> About </a> </li>
+							<li> <a href = "#products"> Products </a> </li>
+							<li> <a href = "#contact"> Contact </a> </li>
+						</ul>
+					</header>
+				</div>
+			</div>
+		<!--header ends-->
+
+		<!--banner-->
+			<div class = "banner">
+				<br/> <br/> <br/> <br/> <br/> <br/> <br/>
+
+				<div class = "container banner-products">
+					<h1 class = "section-title"> Scrap Metals </h1>
+					
+					<div class = "banner-container-plastic">
+						<div class = "plastic-box">
+							<img src = "images/products/aluminium-ubc-scrap.jpg" />
+							
+							<div class = "plastic-box-info">
+								<p>
+
+								Aluminum UBC Scrap
+
+								</p>
+							</div>	
+						</div>
+
+						<div class = "plastic-box">
+							<img src = "images/products/tire-wire-scrap.jpg" />
+							
+							<div class = "plastic-box-info">
+								<p>
+
+								Tire Wire scrap
+
+								</p>
+							</div>	
+						</div>
+
+						<div class = "plastic-box">
+							<img src = "images/products/wheel-scrap.jpg" />
+							
+							<div class = "plastic-box-info">
+								<p>
+
+								Aluminium Alloy Wheel Scrap
+
+								</p>
+							</div>	
+						</div>
+
+						<div class = "plastic-box">
+							<img src = "images/products/millberry-copper-scrap.jpg" />
+							
+							<div class = "plastic-box-info">
+								<p>
+
+								Copper Wire Scrap
+
+								</p>
+							</div>	
+						</div>
+
+						<div class = "plastic-box">
+							<img src = "images/products/rail-scrap.jpg" />
+							
+							<div class = "plastic-box-info">
+								<p>
+
+								Used Rail Scrap
+
+								</p>
+							</div>	
+						</div>
+
+						<div class = "plastic-box">
+							<img src = "images/products/iron-rotors.jpg" />
+							
+							<div class = "plastic-box-info">
+								<p>
+
+								Cast Iron Rotors
+
+								</p>
+							</div>	
+						</div>
+					</div>
+				</div>
+
+				<br/> <br/> <br/> <br/> <br/>
+			</div>
+		<!--banner ends-->
+
+		<!--footer-->
+			<div class = "footer-cover">
+				<div class = "container">
+					<div class = "footer-container">
+						<div class = "footer-box first">
+							<h1 class = "footer-title"> Location </h1>
+
+							<p> 	
+
+							Scrap Metal Yard : Yarrow Road, Industrial Area, Nairobi. 
+
+							</p>
+
+							<p>
+
+							Head Office : Fana Group Centre, Riverside Drive, Westlands.
+
+							</p>
+
+							<img src = "images/logo-black.png" class = "footer-img" />
+						</div>
+
+						<div class = "footer-box" id = "contact">
+							<h1 class = "footer-title"> Contact Us </h1>
+
+							<p> <img src = "images/work/email-black.png" class = "work" /> trading@scrapmetalkenya.co.ke </p>
+							<p> <img src = "images/work/email-black.png" class = "work" /> scrapmetalkenyallc@gmail.com </p>
+							<p> <img src = "images/work/location-black.png" class = "work" /> Nairobi, Kenya </p>
+						</div>
+
+						<div class = "footer-box">
+							<h1 class = "footer-title"> Important Links </h1>
+							
+							<p> <a href = "#" style = "text-decoration: none; color: black;"> Terms & Conditions </a> </p>
+						</div>
+					</div>
+
+					<a href = "#"> <img src = "images/work/go-up.png" class = "go-up" /> </a>
+
+					<hr style = "color: black;" />
+
+					<footer style = "text-align: center;">
+						<p style = "font-size: 11px"> &copy; <span id = "year" style = "font-size: 11px;"></span> Scrap Metal Kenya LLC </p>
+					</footer>
+
+					<script>
+						document.getElementById("year").textContent = new Date().getFullYear();
+					</script>
+				</div>
+			</div>
+		<!--footer ends-->
+	</body>
+</html>
