@@ -22,74 +22,69 @@
 		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 	</head>
 
-	<body>
+	<body style = "background-color: white; color: black;">
+		<!--header-->
+			<div class = "header-cover">
+				<div class = "container">
+					<header>
+						<input type="checkbox" id="check" />
+						<label for="check" class="checkbtn">
+							<i class="fas fa-bars"></i>
+						</label>
+
+						<div class = "logo">
+							<a href = ""> <img src = "images/logo.png" /> </a>									
+						</div>
+
+						<form action = "" method = "POST">
+							<div class = "header-search">
+								<input type = "text" name = "search" placeholder = "search for item by name" 
+								class = "header-form-responsive" required />
+								<button type = "submit" class = "search-btn"> Search </button>
+							</div>
+						</form>
+
+						<ul>
+							<li> <a href = ""> Home </a> </li>
+							<li> <a href = "#about"> About </a> </li>
+							<li> <a href = "#service"> Services </a> </li>
+							<li> <a href = "#contact"> Contact </a> </li>
+						</ul>
+					</header>
+				</div>
+			</div>
+		<!--header ends-->
+
 		<!--banner-->
 			<div class = "banner">
-				<div class = "banner-overlay">
-					<div class = "header-cover">
-						<div class = "container">
-							<header>
-								<input type = "checkbox" id = "check" />
-								<label for = "check" class = "checkbtn">
-									<i class = "fas fa-bars"></i>
-								</label>
+				<div class = "container banner-content">
+					<h1> Reliable Scrap Metal Solutions </h1>
+					<h2> Buying, Recycling & Managing Scrap Metal Efficiently </h2>
 
-								<div class = "logo">
-									<a href = ""> <img src = "images/logo.png" /> </a>
-								</div>
-
-								<form action = "" method = "POST">
-									<div class = "header-search">
-										<input type = "text" name = "search" placeholder = "search for item by name" 
-										class = "header-form-responsive" required />
-										<button type = "submit" class = "search-btn"> Search </button>
-									</div>
-								</form>
-								
-								<ul>
-									<li> <a href = ""> Home </a> </li>
-									<li> <a href = "#about"> About </a> </li>
-									<li> <a href = "#service"> Services </a> </li>
-									<li> <a href = "#contact"> Contact </a> </li>
-								</ul>
-							</header>
-						</div>
-					</div>
-
-					<!--header cover ends-->
-					<br/> <br/> <br/> <br/> <br/> <br/> <br/>
-
-					<!--banner content-->
-					<div class = "container" style = "margin-top: 20px; color: white; text-align: center;">
-						<div class = "banner-content">
-							<h1 class = "banner-h1"> Reliable Scrap Metal Solutions </h1>
-
-							<p> Buying, recycling, and managing scrap metal efficiently </p>
-	            			<a href = "#contact" class = "msg-btn-top"> Get in Touch </a> <!-- btn btn-primary mt-3 -->
-	            		</div>
-					</div>
-					<!--banner content ends-->
+					<a href = "#contact" class = "banner-btn"> Get in Touch </a>
 				</div>
 			</div>
 		<!--banner ends-->
 
 		<!--about-->
-			<div class = "container" style = "margin-top: 30px;" id = "about">
-				<div class = "about">
+			<section class = "about" id = "about">
+				<div class = "container">
 					<h1 class = "section-title"> About Us </h1>
 
 					<p>
-						Scrap Metal Kenya LLC is a leading scrap company providing ecofriendly recycling and reassembling services. <br/> 
-						We work with industries, individuals and businesses to manage waste responsibly.
+					
+					Scrap Metal Kenya LLC is a leading scrap company providing ecofriendly recycling and reassembling services. <br/> 
+					We work with industries, individuals and businesses to manage waste responsibly.
+					
 					</p>
 				</div>
-			</div>
+			</section>
 		<!--about ends-->
 
 		<!--services-->
 			<section class = "service" id = "service">
 				<div class = "container">
-					<h1 class = "section-title" style = "text-align: center; margin-bottom: 20px;"> Our Services </h1>
+					<h1 class = "section-title"> Our Services </h1>
 
 					<div class = "service-container">
 						<div class = "service-box">
@@ -123,7 +118,7 @@
 		<!--products-->
 			<section class = "products">
 				<div class = "container">
-					<h1 class = "section-title" style = "text-align: center; margin-bottom: 20px;"> Products </h1>
+					<h1 class = "section-title"> Products </h1>
 
 					<div class = "products-container">
 						<div class = "product-box">
@@ -175,7 +170,7 @@
 						</div>
 
 						<div class = "product-box">
-							<img src = "https://i.ibb.co/8DWqQZmT/drained-lead-acid-battery-scrap.jpg"  />
+							<img src = "images/products/drained-lead-acid-battery-scrap.jpg" />
 
 							<div class = "product-box-info">
 								<p> Acid Battery Scrap </p>
@@ -211,9 +206,9 @@
 		<!--products end-->
 
 		<!--team-->
-			<div class = "team">
-				<div class = "container" style = "margin-bottom: 50px;">
-					<h1 class = "section-title" style = "text-align: center; margin-bottom: 20px;"> Meet Our Team </h1>
+			<section class = "team">
+				<div class = "container">
+					<h1 class = "section-title"> Meet Our Team </h1>
 
 					<div class = "team-container" id = "teamContainer">
 						<div class = "team-box">
@@ -247,34 +242,36 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 		<!--team ends-->
 
 		<!--get in touch-->
-			<div class = "container" style = "margin-top: 50px; margin-bottom: 50px;">
-				<h1 class = "section-title msg" style = "margin-bottom: 10px;"> Get in Touch </h1>
+			<section class = "get-in-touch">
+				<div class = "container">
+					<h1 class = "section-title"> Get in Touch </h1>
 
-				<form action = "" method = "POST">
-					<div class = "form-container">
-						<div class = "form-box">
-							<label> Name </label> <br/>
-							<input type = "text" name = "stakeholder_name" placeholder = "Enter your name" 
-							class = "form-responsive" required /> <br/> <br/>
+					<form action = "" method = "POST">
+						<div class = "form-container">
+							<div class = "form-box">
+								<label> Name </label> <br/>
+								<input type = "text" name = "stakeholder_name" placeholder = "Enter your name" 
+								class = "form-responsive" required /> <br/> <br/>
 
-							<label> Email </label> <br/>
-							<input type = "email" name = "stakeholder_email" placeholder = "Enter your email" 
-							class = "form-responsive" required />
+								<label> Email </label> <br/>
+								<input type = "email" name = "stakeholder_email" placeholder = "Enter your email" 
+								class = "form-responsive" required />
+							</div>
+
+							<div class = "form-box">
+								<label> Message </label> <br/>
+								<textarea name = "stakeholder_message" placeholder = "Enter your message" class = "ta" rows = "5" required></textarea> <br/> <br/>
+
+								<button class = "msg-btn"> Send Message </button>
+							</div>
 						</div>
-
-						<div class = "form-box">
-							<label> Message </label> <br/>
-							<textarea name = "stakeholder_message" placeholder = "Enter your message" class = "ta" rows = "5" required></textarea> <br/> <br/>
-
-							<button class = "msg-btn"> Send Message </button>
-						</div>
-					</div>
-				</form>
-			</div>
+					</form>
+				</div>
+			</section>
 		<!--get in touch ends-->
 
 		<!--footer-->
@@ -292,7 +289,7 @@
 
 							<p> <img src = "images/work/phone-black.png" class = "work" /> +254700111222 </p>
 							<p> <img src = "images/work/whatsapp-black.png" class = "work" /> +254700111222 </p>
-							<p> <img src = "images/work/email-black.png" class = "work" /> scrapmetalkenyallc@gmail.com </p>
+							<p> <img src = "images/work/email-black.png" class = "work" /> info@scrapmetalke.com </p>
 							<p> <img src = "images/work/location-black.png" class = "work" /> Nairobi </p>
 						</div>
 
@@ -306,18 +303,14 @@
 					<a href = "#"> <img src = "images/work/go-up.png" class = "go-up" /> </a>
 
 					<hr style = "color: black;" />
-					
-					<footer style = "text-align: center; margin-top: 20px;">
+
+					<footer style = "text-align: center;">
 						<p style = "font-size: 11px"> &copy; <span id = "year" style = "font-size: 11px;"></span> Scrap Metal Kenya LLC </p>
 					</footer>
 
 					<script>
 						document.getElementById("year").textContent = new Date().getFullYear();
 					</script>
-
-					<!--<p class = "me" style = "text-align: center; font-size: 11px;"> 
-						Designed by <a href = "" style = "text-decoration: none; color: black;"> Michael Chan </a> 
-					</p>-->
 				</div>
 			</div>
 		<!--footer ends-->
