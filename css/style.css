@@ -424,6 +424,11 @@
 /* footer ends */
 
 /* team */
+	#about
+	{
+		scroll-margin-top: 100px;
+	}
+
 	.team
 	{
 		background-color: #f9f9f9; /* #BDC581 */
