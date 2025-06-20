@@ -836,6 +836,12 @@
 				width: 12%;
 			}
 
+			.footer-box iframe
+			{
+				width: 250px;
+				height: 250px;
+			}
+		
 			.go-up
 			{
 				width: 10%;
