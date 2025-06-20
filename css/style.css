@@ -576,7 +576,7 @@
 				right: -100%;
 				background-color: #BDC581;
 				width: 20%;
-				height: 30vh;
+				height: 50vh;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
@@ -607,6 +607,11 @@
 		/* header ends */
 
 		/* products */
+			.back
+			{
+				width: 5%;
+			}
+
 			.products-container
 			{
 				grid-template-columns: repeat(3, 1fr);
@@ -724,6 +729,11 @@
 				height: 70px;
 			}
 
+			header ul
+			{
+				width: 40%;
+			}
+
 			.header-form-responsive
 			{
 				width: 50%;
@@ -770,6 +780,12 @@
 		/* services end */
 
 		/* products */
+			.back
+			{
+				width: 8%;
+				margin-left: 50px;
+			}
+
 			.products-container
 			{
 				grid-template-columns: repeat(1, 1fr);
@@ -858,7 +874,7 @@
 		/* header */
 			header ul
 			{
-				width: 40%;
+				width: 50%;
 			}
 
 			header .logo
