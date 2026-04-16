@@ -1,320 +1,567 @@
 <!DOCTYPE html>
 <html lang = "en" dir = "ltr">
-	<head>
-		<title> Scrap Metal Kenya LLC </title>
+    <head>
+        <title> Scrap Metal Kenya LLC </title>
 
-		<meta charset = "UTF-8" />
-		<meta name = "author" content = "Michael Chan" /> <!--date of creation; Fri, June 6, 2025-->
-		<meta http-equiv = "X-UA-Compatible" content = "IE=edge" />
-		<meta name = "viewport" content = "width=device-width,initial-scale=1,shrink-to-fit=no" />
+        <meta charset = "UTF-8" />
+        <meta name = "author" content = "Michael Chan" /> <!--date of creation; Fri, June 6, 2025-->
+        <meta name = "viewport" content = "width=device-width,initial-scale=1,shrink-to-fit=no" />
 
-		<!--custom css-->
-		<link rel = "stylesheet" href = "css/style.css" />
+        <!--custom css-->
+        <link rel = "stylesheet" href = "css/style.css" />
 
-		<!--nav responsiveness css-->
-		<link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <!--font awesome for icons-->
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
-		<!--tailwind for session messages-->
-		<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <!--google font, Poppins-->
+        <link rel = "preconnect" href = "https://fonts.googleapis.com" />
+        <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin />
+        <link href = "https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel = "stylesheet" />
+    </head>
 
-		<!--bootstrap css-->
-		<link href ="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-	</head>
+    <body>
+        <!--header-->
+        <div class = "header_cover">
+            <div class = "accent_top"></div>
+            <input type = "checkbox" id = "check" />
+            <div class="container">
+                <header>
+                    <div class = "logo">
+                        <a href = "index.html">
+                            <img src = "images/logo.png" alt = "Scrap Metal Kenya LLC" />
+                        </a>
+                    </div>
+                    <ul>
+                        <li> <a href = "index.html"> Home </a> </li>
+                        <li> <a href = "index.html#about"> About us </a> </li>
+                        <li> <a href = "index.html#products"> Products </a> </li>
+                        <li> <a href = "index.html#team"> Our team </a> </li>
+                        <li class = "nav_cta"><a href = "contact.html"> Contact us </a> </li>
+                    </ul>
+                    <label for = "check" class = "checkbtn" aria-label = "Toggle menu">
+                        <span></span><span></span><span></span>
+                    </label>
+                </header>
+            </div>
+            <nav class = "mobile_menu">
+                <a href = "index.html"> Home </a>
+                <a href = "index.html#about"> About us </a>
+                <a href = "index.html#products"> Products </a>
+                <a href = "index.html#team"> Our team </a>
+                <a href = "contact.html" class = "mob_cta"> Contact us </a> 
+            </nav>
+        </div>
+        <!--header ends-->
 
-	<body style = "background-color: white; color: black;">
-		<!--header-->
-			<div class = "header-cover">
-				<div class = "container">
-					<header>
-						<input type="checkbox" id="check" />
-						<label for="check" class="checkbtn">
-							<i class="fas fa-bars"></i>
-						</label>
+        <!--banner-->
+        <section class = "banner">
+            <div class = "banner_overlay"></div>
+            <div class = "container">
+                <div class = "banner_content">
+                    <div class = "banner_tag"> Kenya's Trusted Scrap Partner </div>
+                    <h1> Scrap Metal <br /> <span> Kenya LLC </span> </h1>
+                    <p> Buying, recycling &amp; managing scrap metal efficiently across Kenya </p>
+                    <div class = "banner_actions">
+                        <a href = "contact.html" class = "banner_btn_primary"> Get in touch </a>
+                        <a href = "#products" class = "banner_btn_ghost"> Our products </a>
+                    </div>
+                </div>
+            </div>
+            <div class = "banner_scroll_hint">
+                <span></span>
+            </div>
+        </section>
+        <!--banner ends-->
 
-						<div class = "logo">
-							<a href = "index.html"> <img src = "images/logo.png" /> </a>									
-						</div>
+        <!--about-->
+        <section class = "about" id = "about">
+            <div class = "container">
 
-						<ul>
-							<li> <a href = "index.html"> Home </a> </li>
-							<li> <a href = "about.html"> About Us </a> </li>
-							<li> <a href = "index.html#products"> Products </a> </li>
-							<li> <a href = "index.html#team"> Meet our Team </a> </li>
-							<li> <a href = "index.html#contact"> Contact Us </a> </li>
-						</ul>
-					</header>
-				</div>
-			</div>
-		<!--header ends-->
+                <div class = "about_header">
+                    <div class = "about_header_left">
+                        <span class = "section_tag">Who we are</span>
+                        <h2 class = "section_title">About Us</h2>
+                    </div>
+                    <div class = "about_header_right">
+                        <p>
+                            Kenya's and East Africa's oldest and largest metal recycling company — purchasing, collecting, processing and recycling all forms of ferrous and non-ferrous metals for over a century.
+                        </p>
+                    </div>
+                </div>
 
-		<!--banner-->
-			<div class = "banner">
-				<div class = "container banner-content">
-					<h1> Scrap Metal Kenya LLC </h1>
-					<h2> Buying, Recycling & Managing Scrap Metal Efficiently </h2>
+                <div class = "about_stats">
+                    <div class = "about_stat">
+                        <span class = "stat_number"> 3+ </span>
+                        <span class = "stat_label"> Years in operation </span>
+                    </div>
+                    <div class = "about_stat">
+                        <span class = "stat_number"> 3 </span>
+                        <span class = "stat_label"> Scrap yards — Nairobi, Mombasa &amp; Kisumu </span>
+                    </div>
+                    <div class = "about_stat">
+                        <span class = "stat_number"> 8+ </span>
+                        <span class = "stat_label"> East African countries served </span>
+                    </div>
+                    <div class = "about_stat">
+                        <span class = "stat_number"> 5+ </span>
+                        <span class = "stat_label"> Metal types processed </span>
+                    </div>
+                </div>
 
-					<a href = "#contact" class = "banner-btn"> Get in Touch </a>
-				</div>
-			</div>
-		<!--banner ends-->
+                <div class = "about_body">
+                    <div class = "about_card">
+                        <div class = "about_card_icon">
+                            <i class = "fas fa-recycle"></i>
+                        </div>
+                        <h3> What we do </h3>
+                        <p>
+                            We purchase scrap metals from industrial enterprises, public entities, dealers and private individuals. We also acquire scrap from off-site demolition projects, providing expert demolition services to mines and factories — fully equipped to handle all environmental hazards including radioactive material and asbestos.
+                        </p>
+                    </div>
+                    <div class = "about_card">
+                        <div class = "about_card_icon">
+                            <i class = "fas fa-leaf"></i>
+                        </div>
+                        <h3> Our commitment </h3>
+                        <p>
+                            We are fully committed to preserving the environment and handling all materials in an environmentally responsible manner. We pride ourselves on an impeccable health and safety record throughout the Group.
+                        </p>
+                    </div>
+                    <div class = "about_card">
+                        <div class = "about_card_icon">
+                            <i class = "fas fa-globe-africa"></i>
+                        </div>
+                        <h3> Our reach </h3>
+                        <p>
+                            A proudly Kenyan company with a long tradition of trading across East Africa — including Uganda, Tanzania, Rwanda, Sudan, Ethiopia, Mozambique, and the DRC. We are also a founding member of the Kenya Scrap Metal Traders Association.
+                        </p>
+                    </div>
+                </div>
 
-		<!--about-->
-			<section class = "about" id = "about">
-				<div class = "container">
-					<h1 class = "section-title"> About Us </h1>
+            </div>
+        </section>
+        <!--about ends-->
 
-					<p>
-					
-					Scrap Metal Kenya LLC is Kenya's and East Africa’s oldest and largest metal recycling company.
-					For the last century, the company has purchased, collected, processed and recycled all forms of ferrous metals (iron and steel) and non-ferrous metals (aluminium, copper, zinc, stainless steel, lead, nickel, brass, tin, bronze and others). 
+        <!--services-->
+        <section class = "services">
+            <div class = "container">
 
-					<br/> <br/>
+                <div class = "services_header">
+                    <span class = "section_tag"> What we offer </span>
+                    <h2 class = "section_title"> Our Services </h2>
+                </div>
 
-					We are founding member of Kenya Scrap Metal Traders Association.
+                <div class = "services_grid">
 
-					<br/> <br/>
+                    <div class = "service_box">
+                        <div class = "service_icon">
+                            <i class = "fas fa-truck"></i>
+                        </div>
+                        <h3 class = "service_box_header"> Scrap Metal Collection </h3>
+                        <p>
+                            We offer fast pickup services for all types of scrap metals from your location.
+                        </p>
+                    </div>
 
-					From our conveniently-located scrap yards in and around Nairobi, Mombasa and Kisumu, we purchase scrap metals from a range of Kenyan sources including industrial enterprises, public entities, scrap metal dealers and private individuals. In addition, our company acquires scrap metal from off-site demolition projects, where it is able to provide expert demolition services to mines and factories. It is fully equipped to deal with all environmental hazards including radioactive material and asbestos.
-					We are fully committed to preserving the fragile environment in which we live and to dealing with all materials in an environmentally responsible manner. We pride ourselves on our impeccable health and safety record throughout the Group.
- 
-					<br/> <br/>
+                    <div class = "service_box">
+                        <div class = "service_icon">
+                            <i class = "fas fa-industry"></i>
+                        </div>
+                        <h3 class = "service_box_header"> Industrial Recycling </h3>
+                        <p>
+                            Custom solutions for factories and workshops to manage their metal waste.
+                        </p>
+                    </div>
 
-					Scrap Metal Kenya LLC is a proudly Kenyan company and has a long tradition of trading in most Eastern African countries including Uganda, Tanzania, Rwanda, Sudan, Ethiopia, Mozambique, and DRC - The Democratic Republic of the Congo.
-					</p>
-				</div>
-			</section>
-		<!--about ends-->
+                    <div class = "service_box">
+                        <div class = "service_icon">
+                            <i class = "fas fa-hand-holding-usd"></i>
+                        </div>
+                        <h3 class = "service_box_header"> Metal Purchase </h3>
+                        <p>
+                            We buy ferrous and non-ferrous scrap at competitive prices with immediate payment.
+                        </p>
+                    </div>
 
-		<!--team-->
-			<section class = "team" id = "team">
-				<div class = "container">
-					<h1 class = "section-title"> Meet Our Team </h1>
+                </div>
+            </div>
+        </section>
+        <!--services end-->
 
-					<div class = "team-container" id = "teamContainer">
-						<div class = "team-box">
-							<img src = "images/team/man-11.jpg" />
+        <!--products-->
+        <section class = "products" id = "products">
+            <div class = "container">
 
-							<p class = "team-box-title"> 
-								John Nduva <span> Chief Executive Officer <br/> ceo@scrapmetalkenya.co.ke </span> 
-							</p>
+                <div class = "products_header">
+                    <span class = "section_tag"> What we collect </span>
+                    <h2 class = "section_title"> Our Products </h2>
+                </div>
 
-							<a href = "" class = "linkedin-btn"> LinkedIn </a>
-						</div>
+                <div class = "products_grid">
 
-						<div class = "team-box">
-							<img src = "images/team/man-22.jpg" />
+                    <a href = "paper_scrap.html" class = "product_card">
+                        <div class = "product_img_wrap">
+                            <img src = "images/products/paper-scrap.png" alt = "Paper Scrap" />
+                            <div class = "product_overlay"></div>
+                        </div>
+                        <div class = "product_info">
+                            <span class = "product_name"> Paper Scrap </span>
+                            <span class = "product_arrow">
+                                <i class = "fas fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </a>
 
-							<p class = "team-box-title"> 
-								Alexander Simiyu <span> Chief Operating Officer <br/> simiyu@scrapmetalkenya.co.ke </span> 
-							</p>
+                    <a href = "plastic_scrap.html" class = "product_card">
+                        <div class = "product_img_wrap">
+                            <img src = "images/products/pet-plastic-bottles-scrap.jpg" alt = "Plastic Scrap" />
+                            <div class = "product_overlay"></div>
+                        </div>
+                        <div class = "product_info">
+                            <span class = "product_name"> Plastic Scrap </span>
+                            <span class = "product_arrow">
+                                <i class = "fas fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </a>
 
-							<a href = "" class = "linkedin-btn"> LinkedIn </a>
-						</div>
+                    <a href = "battery_scrap.html" class = "product_card">
+                        <div class = "product_img_wrap">
+                            <img src = "images/products/drained-used-lead-acid-battery-scrap.jpg" alt = "Battery Scrap" />
+                            <div class = "product_overlay"></div>
+                        </div>
+                        <div class = "product_info">
+                            <span class = "product_name"> Battery Scrap </span>
+                            <span class = "product_arrow">
+                                <i class = "fas fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </a>
 
-						<div class = "team-box">
-							<img src = "images/logo.png" />
+                    <a href = "metal_scrap.html" class = "product_card">
+                        <div class = "product_img_wrap">
+                            <img src = "images/products/used-railway-scrap.jpg" alt = "Metal Scrap" />
+                            <div class = "product_overlay"></div>
+                        </div>
+                        <div class = "product_info">
+                            <span class = "product_name"> Metal Scrap </span>
+                            <span class = "product_arrow">
+                                <i class = "fas fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </a>
 
-							<p class = "team-box-title"> 
-								Edwin Ruto <span> Exports Manager <br/> exports@scrapmetalkenya.co.ke </span> 
-							</p>
+                    <a href = "rubber_scrap.html" class = "product_card">
+                        <div class = "product_img_wrap">
+                            <img src = "images/products/rubber-scrap.jpg" alt = "Rubber Scrap" />
+                            <div class = "product_overlay"></div>
+                        </div>
+                        <div class = "product_info">
+                            <span class = "product_name"> Rubber Scrap </span>
+                            <span class = "product_arrow">
+                                <i class = "fas fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </a>
 
-							<a href = "" class = "linkedin-btn"> LinkedIn </a>
-						</div>
+                </div>
+            </div>
+        </section>
+        <!--products end-->
 
-						<div class = "team-box">
-							<img src = "images/team/woman-44.jpg" />
+        <!--sell to us-->
+        <section class = "sell_to_us">
+            <div class = "container">
 
-							<p class = "team-box-title"> 
-								Patricia Wanjiku <span> Office Administrator <br/> admin@scrapmetalkenya.co.ke </span> 
-							</p>
+                <div class = "sell_to_us_inner">
 
-							<a href = "" class = "linkedin-btn"> LinkedIn </a>
-						</div>
-					</div>
-				</div>
-			</section>
-		<!--team ends-->
+                    <div class = "sell_to_us_left">
+                        <span class = "section_tag"> Get a quote </span>
+                        <h2 class = "section_title"> Sell to Us </h2>
+                        <p>
+                            Have scrap metal to offload? Fill in your details and we'll get back to you promptly with a competitive offer
+                        </p>
+                        <ul class = "sell_perks">
+                            <li>
+                                <i class = "fas fa-check-circle"></i>
+                                Competitive market prices
+                            </li>
+                            <li>
+                                <i class = "fas fa-check-circle"></i>
+                                Immediate payment on collection
+                            </li>
+                            <li>
+                                <i class = "fas fa-check-circle"></i>
+                                Free pickup from your location
+                            </li>
+                            <li>
+                                <i class = "fas fa-check-circle"></i>
+                                All metal types accepted
+                            </li>
+                        </ul>
+                    </div>
 
-		<!--products-->
-			<section class = "products" id = "products">
-				<div class = "container">
-					<h1 class = "section-title"> Products </h1>
+                    <div class = "sell_to_us_right">
+                        <form action = "" method = "POST" class = "sell_form">
+                            <div class = "sell_form_group">
+                                <label for = "stakeholder_name"> Name </label>
+                                <input  type = "text" 
+                                        id = "stakeholder_name" 
+                                        name = "stakeholder_name"
+                                        placeholder = "Enter your name" 
+                                        required />
+                            </div>
+                            <div class = "sell_form_group">
+                                <label for = "stakeholder_email"> Email </label>
+                                <input  type = "email" 
+                                        id = "stakeholder_email" 
+                                        name = "stakeholder_email"
+                                        placeholder = "Enter your email" 
+                                        required />
+                            </div>
+                            <div class = "sell_form_group">
+                                <label for = "stakeholder_phone"> Phone </label>
+                                <input  type = "tel" 
+                                        id = "stakeholder_phone" 
+                                        name = "stakeholder_phone"
+                                        placeholder = "Enter your mobile number" 
+                                        required />
+                            </div>
+                            <div class = "sell_form_group">
+                                <label for = "stakeholder_message"> Message </label>
+                                <textarea   id = "stakeholder_message" 
+                                            name = "stakeholder_message"
+                                            placeholder = "Describe your scrap — type, quantity, location"
+                                            rows = "5" 
+                                            required></textarea>
+                            </div>
+                            <button type = "submit" name = "submit" class = "sell_submit">
+                                Send message
+                                <i class = "fas fa-arrow-right"></i>
+                            </button>
+                        </form>
+                    </div>
 
-					<div class = "products-container">
-						<a href = "products-scrap-metal.html">
-							<div class = "product-box">
-								<img src = "images/products/paper-scrap.png" />
+                </div>
+            </div>
+        </section>
+        <!--sell to us ends-->
 
-								<div class = "product-box-info">
-									<p> Paper Scrap </p>
-								</div>
-							</div>
-						</a>
+        <!--team-->
+        <section class = "team" id = "team">
+            <div class = "container">
 
-						<a href = "products-plastic.html">
-							<div class = "product-box">
-								<!--<img src = "https://i.ibb.co/HLLPKDV6/plastic-scrap.jpg" />-->
-								<img src = "images/products/pet-plastic-bottles-scrap.jpg" />
+                <div class = "team_header">
+                    <span class = "section_tag"> The people behind SMK </span>
+                    <h2 class = "section_title"> Meet Our Team </h2>
+                </div>
 
-								<div class = "product-box-info">
-									<p> Plastic Scrap </p>
-								</div>
-							</div>
-						</a>
+                <div class = "team_grid">
 
-						<a href = "products-batteries.html">
-							<div class = "product-box">
-								<!--<img src = "https://i.ibb.co/CpXQT7Kc/drained-lead-acid-battery-scrap.jpg" />-->
-								<img src = "images/products/drained-used-lead-acid-battery-scrap.jpg" />
-														
-								<div class = "product-box-info">
-									<p> Used Batteries Scrap </p>
-								</div>
-							</div>
-						</a>
+                    <div class = "team_card">
+                        <div class = "team_img_wrap">
+                            <img src = "images/team/man-11.jpg" alt = "John Nduva" />
+                        </div>
+                        <div class = "team_info">
+                            <h3 class = "team_name"> John Nduva </h3>
+                            <span class = "team_role"> Chief Executive Officer </span>
+                            <a href = "mailto:ceo@scrapmetalkenya.co.ke" class = "team_email"> ceo@scrapmetalkenya.co.ke </a>
+                        </div>
+                        <div class = "team_footer">
+                            <a href = "" class = "linkedin_btn">
+                                <i class = "fab fa-linkedin-in"></i>
+                                LinkedIn
+                            </a>
+                        </div>
+                    </div>
 
-						<a href = "products-scrap-metals.html">
-							<div class = "product-box">
-								<img src = "images/products/used-railway-scrap.jpg" />
+                    <div class = "team_card">
+                        <div class = "team_img_wrap">
+                            <img src = "images/team/man-22.jpg" alt = "Alexander Simiyu" />
+                        </div>
+                        <div class = "team_info">
+                            <h3 class = "team_name"> Alexander Simiyu </h3>
+                            <span class = "team_role"> Chief Operating Officer </span>
+                            <a href = "mailto:simiyu@scrapmetalkenya.co.ke" class = "team_email"> simiyu@scrapmetalkenya.co.ke </a>
+                        </div>
+                        <div class = "team_footer">
+                            <a href = "" class = "linkedin_btn">
+                                <i class = "fab fa-linkedin-in"></i>
+                                LinkedIn
+                            </a>
+                        </div>
+                    </div>
 
-								<div class = "product-box-info">
-									<p> Scrap Metals </p>
-								</div>
-							</div>
-						</a>
+                    <div class = "team_card">
+                        <div class = "team_img_wrap">
+                            <img src = "images/team/man.jpg" alt = "Edwin Ruto" />
+                        </div>
+                        <div class = "team_info">
+                            <h3 class = "team_name"> Edwin Ruto </h3>
+                            <span class = "team_role"> Exports Manager </span>
+                            <a href = "mailto:exports@scrapmetalkenya.co.ke" class = "team_email"> exports@scrapmetalkenya.co.ke </a>
+                        </div>
+                        <div class = "team_footer">
+                            <a href = "" class = "linkedin_btn">
+                                <i class = "fab fa-linkedin-in"></i>
+                                LinkedIn
+                            </a>
+                        </div>
+                    </div>
 
-						<a href = "products-rubber-scrap.html">
-							<div class = "product-box">
-								<img src = "images/products/rubber-scrap.jpg" />
+                    <div class = "team_card">
+                        <div class = "team_img_wrap">
+                            <img src = "images/team/woman-44.jpg" alt = "Patricia Wanjiku" />
+                        </div>
+                        <div class = "team_info">
+                            <h3 class = "team_name"> Patricia Wanjiku </h3>
+                            <span class = "team_role"> Office Administrator </span>
+                            <a href = "mailto:admin@scrapmetalkenya.co.ke" class = "team_email"> admin@scrapmetalkenya.co.ke </a>
+                        </div>
+                        <div class = "team_footer">
+                            <a href = "" class = "linkedin_btn">
+                                <i class = "fab fa-linkedin-in"></i>
+                                LinkedIn
+                            </a>
+                        </div>
+                    </div>
 
-								<div class = "product-box-info">
-									<p> Old Rubber Scrap </p>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-			</section>
-		<!--products end-->
+                </div>
+            </div>
+        </section>
+        <!--team ends-->
 
-		<!--services-->
-			<section class = "service" id = "service">
-				<div class = "container">
-					<h1 class = "section-title"> Our Services </h1>
+        <!--location-->
+        <section class = "location">
+            <div class = "container">
 
-					<div class = "service-container">
-						<div class = "service-box">
-							<h1 class = "service-box-header"> Scrap Metal Collection </h1>
+                <div class = "location_header">
+                    <span class = "section_tag"> Find us </span>
+                    <h2 class = "section_title"> Our Locations </h2>
+                </div>
 
-							<p>
-								We offer fast pickup services for all types of scrap metals from your location.
-							</p>
-						</div>
+                <div class = "location_grid">
 
-						<div class = "service-box">
-							<h1 class = "service-box-header"> Industrial Recycling </h1>
-							
-							<p>
-								Custom solutions for factories and workshops to manage their metal waste.
-							</p>	
-						</div>
+                    <div class = "location_card">
+                        <div class = "location_card_header">
+                            <div class = "location_icon">
+                                <i class = "fas fa-industry"></i>
+                            </div>
+                            <div>
+                                <h3 class = "location_title"> Scrap Metal Yard </h3>
+                                <span class = "location_badge"> Operations </span>
+                            </div>
+                        </div>
+                        <ul class = "location_details">
+                            <li>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                <span> Yarrow Road, Off Nanyuki Road, <br /> Industrial Area, Nairobi </span>
+                            </li>
+                            <li>
+                                <i class = "fas fa-phone"></i>
+                                <a href = "tel:+254755328813"> +254 755 328 813 </a>
+                            </li>
+                        </ul>
+                        <div class = "location_map">
+                            <iframe     src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31910.261937312578!2d36.84251295706975!3d-1.3054550108701186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f117c0ee5fdbf%3A0xd55946e437b6d67e!2sIndustrial%20Area%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1750453226066!5m2!1sen!2ske"
+                                        allowfullscreen = "" 
+                                        loading = "lazy" 
+                                        referrerpolicy = "no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
 
-						<div class = "service-box">
-							<h1 class = "service-box-header"> Metal Purchase </h1>
-							
-							<p>
-								We buy ferrous and non - ferrous soap at competitive prices with immediate payment.
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
-		<!--services end-->
+                    <div class = "location_card">
+                        <div class = "location_card_header">
+                            <div class = "location_icon">
+                                <i class = "fas fa-building"></i>
+                            </div>
+                            <div>
+                                <h3 class = "location_title"> Head Office </h3>
+                                <span class = "location_badge"> Administrative </span>
+                            </div>
+                        </div>
+                        <ul class = "location_details">
+                            <li>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                <span> Fana Group Centre, Riverside Drive, <br /> Westlands, Nairobi </span>
+                            </li>
+                            <li>
+                                <i class = "fas fa-phone"></i>
+                                <a href = "tel:+254755328813"> +254 755 328 813 </a>
+                            </li>
+                        </ul>
+                        <div class = "location_map">
+                            <iframe     src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.838752834353!2d36.79095937501262!3d-1.2696591356082643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1744d1f496ef%3A0xa2a048835be09d59!2sRiverside%20Dr%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1750452723008!5m2!1sen!2ske"
+                                        allowfullscreen = "" 
+                                        loading = "lazy" 
+                                        referrerpolicy = "no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
 
-		
+                </div>
+            </div>
+        </section>
+        <!--location ends-->
 
-		<!--get in touch-->
-			<section class = "get-in-touch">
-				<div class = "container">
-					<h1 class = "section-title" style = "text-align: center;"> Sell to Us </h1>
+        <!--footer-->
+        <footer class = "footer" id = "footer">
+            <div class = "container">
 
-					<form action = "" method = "POST">
-						<div class = "form-container">
-							<div class = "form-box">
-								<label> Name </label> <br/>
-								<input type = "text" name = "stakeholder_name" placeholder = "Enter your name" 
-								class = "form-responsive" required /> <br/> <br/>
+                <div class = "footer_inner">
 
-								<label> Email </label> <br/>
-								<input type = "email" name = "stakeholder_email" placeholder = "Enter your email" 
-								class = "form-responsive" required /> <br/> <br/>
+                    <div class = "footer_brand">
+                        <img src = "images/logo.png" alt = "Scrap Metal Kenya LLC" class = "footer_logo" />
+                        <p>
+                            Kenya's oldest and largest metal recycling company — serving East Africa for over a century.
+                        </p>
+                    </div>
 
-								<label> Phone </label> <br/>
-								<input type = "tel" name = "stakeholder_phone" placeholder = "Enter your mobile number" 
-								class = "form-responsive" required />
-							</div>
+                    <div class = "footer_links">
+                        <h4> Quick links </h4>
+                        <ul>
+                            <li> <a href = "index.html"> Home </a> </li>
+                            <li> <a href = "index.html#about"> About us </a> </li>
+                            <li> <a href = "index.html#products"> Products </a> </li>
+                            <li> <a href = "index.html#team"> Our team </a> </li>
+                            <li> <a href = "contact.html"> Contact us </a> </li>
+                        </ul>
+                    </div>
 
-							<div class = "form-box">
-								<label> Message </label> <br/>
-								<textarea name = "stakeholder_message" placeholder = "Enter your message" class = "ta" rows = "5" required></textarea> <br/> <br/>
+                    <div class = "footer_contact">
+                        <h4> Contact us </h4>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-envelope"></i>
+                                <a href = "mailto:trading@scrapmetalkenya.co.ke"> trading@scrapmetalkenya.co.ke </a>
+                            </li>
+                            <li>
+                                <i class = "fas fa-envelope"></i>
+                                <a href = "mailto:scrapmetalkenyallc@gmail.com"> scrapmetalkenyallc@gmail.com </a>
+                            </li>
+                            <li>
+                                <i class = "fab fa-whatsapp"></i>
+                                <a href = "https://wa.me/254755328813"> +254 755 328 813 </a>
+                            </li>
+                        </ul>
+                    </div>
 
-								<button class = "msg-btn"> Send Message </button>
-							</div>
-						</div>
-					</form>
-				</div>
-			</section>
-		<!--get in touch ends-->
+                </div>
 
-		<!--footer-->
-			<div class = "footer-cover">
-				<div class = "container">
-					<div class = "footer-container">
-						<div class = "footer-box first">
-							<h1 class = "footer-title"> Scrap Metal Yard </h1>
+                <div class = "footer_bottom">
+                    <p>
+                        &copy; <span id = "year"></span> Scrap Metal Kenya LLC. All rights reserved.
+                    </p>
+                    <a href = "#" class = "footer_top_btn" aria-label = "Back to top">
+                        <i class = "fas fa-arrow-up"></i>
+                    </a>
+                </div>
 
-							<p> 
-								<img src = "images/work/location-black.png" class = "work" /> Yarrow Road, Off Nanyuki Road </p>
-							<p> <img src = "images/work/location-black.png" class = "work" /> Industrial Area, Nairobi. </p>
-							<p> <img src = "images/work/phone-black.png" class = "work" /> +254755328813 </p> <br/>
+            </div>
+        </footer>
+        <!--footer ends-->
 
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31910.261937312578!2d36.84251295706975!3d-1.3054550108701186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f117c0ee5fdbf%3A0xd55946e437b6d67e!2sIndustrial%20Area%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1750453226066!5m2!1sen!2ske" width="350" height="350" style="border:0; border-radius: 13px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-						</div>
-
-						<div class = "footer-box" id = "contact">
-							<h1 class = "footer-title"> Head Office </h1>
-
-							<p> <img src = "images/work/location-black.png" class = "work" /> Fana Group Centre, Riverside Drive </p>
-							<p> <img src = "images/work/location-black.png" class = "work" /> Westlands, Nairobi. </p>
-							<p> <img src = "images/work/phone-black.png" class = "work" /> +254755328813 </p> <br/>
-
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.838752834353!2d36.79095937501262!3d-1.2696591356082643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1744d1f496ef%3A0xa2a048835be09d59!2sRiverside%20Dr%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1750452723008!5m2!1sen!2ske" width="350" height="350" 
-							style="border:0; border-radius: 13px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-						</div>
-
-						<div class = "footer-box">
-							<h1 class = "footer-title"> Contact Us </h1>
-							
-							<p> <img src = "images/work/email-black.png" class = "work" /> trading@scrapmetalkenya.co.ke </p>
-							<p> <img src = "images/work/email-black.png" class = "work" /> scrapmetalkenyallc@gmail.com </p>
-							<p> <img src = "images/work/whatsapp-black.png" class = "work" /> +254755328813 </p>
-						</div>
-					</div>
-
-					<a href = "#"> <img src = "images/work/go-up.png" class = "go-up" /> </a>
-
-					<hr style = "color: black;" />
-
-					<footer style = "text-align: center;">
-						<p style = "font-size: 11px"> &copy; <span id = "year" style = "font-size: 11px;"></span> Scrap Metal Kenya LLC </p>
-					</footer>
-
-					<script>
-						document.getElementById("year").textContent = new Date().getFullYear();
-					</script>
-				</div>
-			</div>
-		<!--footer ends-->
-	</body>
+        <!--javascript-->
+        <script src = "js/script.js"></script>
+        <!--javascript ends-->
+    </body>
 </html>

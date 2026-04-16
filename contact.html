@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang = "en" dir = "ltr">
+    <head>
+        <title> Scrap Metal Kenya LLC </title>
+
+        <meta charset = "UTF-8" />
+        <meta name = "author" content = "Michael Chan" /> <!--date of creation; Fri, June 6, 2025-->
+        <meta name = "viewport" content = "width=device-width,initial-scale=1,shrink-to-fit=no" />
+
+        <!--custom css-->
+        <link rel = "stylesheet" href = "css/style.css" />
+
+        <!--font awesome for icons-->
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+        <!--google font, Poppins-->
+        <link rel = "preconnect" href = "https://fonts.googleapis.com" />
+        <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin />
+        <link href = "https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel = "stylesheet" />
+    </head>
+
+    <body>
+        <!--header-->
+        <div class = "header_cover">
+            <div class = "accent_top"></div>
+            <input type = "checkbox" id = "check" />
+            <div class="container">
+                <header>
+                    <div class = "logo">
+                        <a href = "index.html">
+                            <img src = "images/logo.png" alt = "Scrap Metal Kenya LLC" />
+                        </a>
+                    </div>
+                    <ul>
+                        <li> <a href = "index.html"> Home </a> </li>
+                        <li> <a href = "index.html#about"> About us </a> </li>
+                        <li> <a href = "index.html#products"> Products </a> </li>
+                        <li> <a href = "index.html#team"> Our team </a> </li>
+                        <li class = "nav_cta"><a href = "contact.html"> Contact us </a> </li>
+                    </ul>
+                    <label for = "check" class = "checkbtn" aria-label = "Toggle menu">
+                        <span></span><span></span><span></span>
+                    </label>
+                </header>
+            </div>
+            <nav class = "mobile_menu">
+                <a href = "index.html"> Home </a>
+                <a href = "index.html#about"> About us </a>
+                <a href = "index.html#products"> Products </a>
+                <a href = "index.html#team"> Our team </a>
+                <a href = "contact.html" class = "mob_cta"> Contact us </a> 
+            </nav>
+        </div>
+        <!--header ends-->
+
+        <!--contact hero-->
+        <section class = "contact_hero">
+            <div class = "contact_hero_overlay"></div>
+            <div class = "container">
+                <div class = "contact_hero_content">
+                    <span class = "section_tag"> Reach out </span>
+                    <h1> Contact Us </h1>
+                    <p> 
+                        Have a question, a bulk inquiry, or just want to talk scrap? We'd love to hear from you.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--contact hero ends-->
+
+        <!--contact body-->
+        <section class="contact_body">
+            <div class="container">
+                <div class="contact_inner">
+
+                    <!--left: info-->
+                    <div class="contact_info">
+                        <span class="section_tag">Get in touch</span>
+                        <h2 class="section_title">We're here to help</h2>
+                        <p>Whether you have scrap to sell, want a quote, or need to discuss a large-scale industrial project — our team responds promptly.</p>
+
+                        <ul class="contact_details">
+                            <li>
+                                <div class="contact_detail_icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <span class="contact_detail_label">Email</span>
+                                    <a href="mailto:trading@scrapmetalkenya.co.ke">trading@scrapmetalkenya.co.ke</a>
+                                    <a href="mailto:scrapmetalkenyallc@gmail.com">scrapmetalkenyallc@gmail.com</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact_detail_icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <span class="contact_detail_label">Phone</span>
+                                    <a href="tel:+254755328813">+254 755 328 813</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact_detail_icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div>
+                                    <span class="contact_detail_label">WhatsApp</span>
+                                    <a href="https://wa.me/254755328813">+254 755 328 813</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact_detail_icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <span class="contact_detail_label">Head Office</span>
+                                    <span>Fana Group Centre, Riverside Drive,<br />Westlands, Nairobi</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--right: form-->
+                    <div class="contact_form_wrap">
+                        <form action="" method="POST" class="contact_form" id="contact_form">
+
+                            <div class="contact_form_row">
+                                <div class="contact_form_group">
+                                    <label for="contact_name">Full name</label>
+                                    <input type="text" id="contact_name" name="contact_name"
+                                        placeholder="e.g. Jane Muthoni" required />
+                                </div>
+                                <div class="contact_form_group">
+                                    <label for="contact_email">Email address</label>
+                                    <input type="email" id="contact_email" name="contact_email"
+                                        placeholder="e.g. jane@company.com" required />
+                                </div>
+                            </div>
+
+                            <div class="contact_form_group">
+                                <label for="contact_phone">Phone number <span class="optional">(optional)</span></label>
+                                <input type="tel" id="contact_phone" name="contact_phone"
+                                    placeholder="e.g. +254 700 000 000" />
+                            </div>
+
+                            <div class="contact_form_group">
+                                <label for="contact_subject">Subject</label>
+                                <select id="contact_subject" name="contact_subject" required>
+                                    <option value="" disabled selected>Select a subject</option>
+                                    <option value="sell">I want to sell scrap</option>
+                                    <option value="quote">Request a quote</option>
+                                    <option value="industrial">Industrial recycling inquiry</option>
+                                    <option value="demolition">Demolition project</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="contact_form_group">
+                                <label for="contact_message">Message</label>
+                                <textarea id="contact_message" name="contact_message"
+                                    placeholder="Tell us what you need — type of metal, quantity, location, or any other details..."
+                                    rows="6" required></textarea>
+                            </div>
+
+                            <button type="submit" class="contact_submit">
+                                Send message
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+
+                            <p class="contact_form_note">
+                                <i class="fas fa-lock"></i>
+                                Your information is kept private and never shared.
+                            </p>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--contact body ends-->
+
+        <!--footer-->
+        <footer class = "footer" id = "footer">
+            <div class = "container">
+
+                <div class = "footer_inner">
+
+                    <div class = "footer_brand">
+                        <img src = "images/logo.png" alt = "Scrap Metal Kenya LLC" class = "footer_logo" />
+                        <p>
+                            Kenya's oldest and largest metal recycling company — serving East Africa for over a century.
+                        </p>
+                    </div>
+
+                    <div class = "footer_links">
+                        <h4> Quick links </h4>
+                        <ul>
+                            <li> <a href = "index.html"> Home </a> </li>
+                            <li> <a href = "index.html#about"> About us </a> </li>
+                            <li> <a href = "index.html#products"> Products </a> </li>
+                            <li> <a href = "index.html#team"> Our team </a> </li>
+                            <li> <a href = "contact.html"> Contact us </a> </li>
+                        </ul>
+                    </div>
+
+                    <div class = "footer_contact">
+                        <h4> Contact us </h4>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-envelope"></i>
+                                <a href = "mailto:trading@scrapmetalkenya.co.ke"> trading@scrapmetalkenya.co.ke </a>
+                            </li>
+                            <li>
+                                <i class = "fas fa-envelope"></i>
+                                <a href = "mailto:scrapmetalkenyallc@gmail.com"> scrapmetalkenyallc@gmail.com </a>
+                            </li>
+                            <li>
+                                <i class = "fab fa-whatsapp"></i>
+                                <a href = "https://wa.me/254755328813"> +254 755 328 813 </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class = "footer_bottom">
+                    <p>
+                        &copy; <span id = "year"></span> Scrap Metal Kenya LLC. All rights reserved.
+                    </p>
+                    <a href = "#" class = "footer_top_btn" aria-label = "Back to top">
+                        <i class = "fas fa-arrow-up"></i>
+                    </a>
+                </div>
+
+            </div>
+        </footer>
+        <!--footer ends-->
+
+        <!--javascript-->
+        <script src = "js/script.js"></script>
+        <!--javascript ends-->
+    </body>
+</html>
